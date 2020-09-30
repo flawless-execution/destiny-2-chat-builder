@@ -5,10 +5,22 @@ import styles from '../styles/Home.module.scss';
 import { Column } from '../components/column/column';
 
 export default function Home() {
-  const [font_face, set_face_size] = useState<string>('AxisStd-Regular');
-  const [font_size, set_font_size] = useState<number>(0.5419);
-  const [padding_top, set_padding_top] = useState<number>(0.52);
-  const [padding_left, set_padding_left] = useState<number>(0.53);
+  // const [font_face, set_face_size] = useState<string>('AxisStd-Regular');
+  // const [font_size, set_font_size] = useState<number>(0.5419);
+  // const [padding_top, set_padding_top] = useState<number>(0.52);
+  // const [padding_left, set_padding_left] = useState<number>(0.53);
+
+  // const [font_face, set_face_size] = useState<string>(
+  //   'NeueHaasUnicaW1G-Regular',
+  // );
+  // const [font_size, set_font_size] = useState<number>(0.6619);
+  // const [padding_top, set_padding_top] = useState<number>(0.33);
+  // const [padding_left, set_padding_left] = useState<number>(0.62);
+
+  const [font_face, set_face_size] = useState<string>('NHaasGroteskTXPro-55Rg');
+  const [font_size, set_font_size] = useState<number>(0.628);
+  const [padding_top, set_padding_top] = useState<number>(0.45);
+  const [padding_left, set_padding_left] = useState<number>(0.44);
 
   const [input_text, set_input_text] = useState<string>('');
 
