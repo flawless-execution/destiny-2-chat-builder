@@ -88,16 +88,6 @@ export default function Home() {
     calc_font_size(font_size),
   );
 
-  // const column_data: ColumnData[] = [];
-  // for (let row of input_text_table) {
-  //   column_data.push(
-  //     new ColumnData(
-  //       row,
-  //       calc_font_family(font_face),
-  //       calc_font_size(font_size),
-  //     ),
-  //   );
-  // }
   const column_data: ColumnData[] = [];
   for (let i = 0; i < input_text_table[0].length; i++) {
     column_data.push(
@@ -142,7 +132,6 @@ export default function Home() {
         const spaces_before = Math.floor(spaces / 2);
         const spaces_after = Math.ceil(spaces / 2);
 
-        console.debug('j', j, output[i], output[i][j]);
         output[i][j] =
           ' '.repeat(spaces_before + 1) +
           row.value +
@@ -151,13 +140,9 @@ export default function Home() {
       }
     }
 
-    console.log(output);
-
     for (let i = 0; i < output[0].length; i++) {
       output_lines.push(output.reduce((row, val) => row + val[i], ''));
     }
-
-    console.log(output_lines);
   }
 
   return (
