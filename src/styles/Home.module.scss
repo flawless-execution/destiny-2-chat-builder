@@ -1,15 +1,43 @@
 .fontSample {
   position: relative;
   width: 610px;
+  height: 64px;
   overflow: hidden;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    filter: grayscale(1) brightness(3);
+    mix-blend-mode: screen;
+  }
+
+  .previewText {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: fuchsia;
+    line-height: 1.45;
+  }
 }
 
-.previewText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: fuchsia;
-  line-height: 1.45;
+.form {
+  margin: 1rem 0;
+}
+
+.outputText {
+  white-space: pre;
+
+  .channel {
+    color: rgb(90, 133, 114);
+    user-select: none;
+  }
+
+  .clipboardButton {
+    user-select: none;
+  }
 }
 
 .container {
