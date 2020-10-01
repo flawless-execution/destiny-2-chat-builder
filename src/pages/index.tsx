@@ -338,7 +338,7 @@ export default function Home() {
               {output_lines.map((row, i) => (
                 <Row key={i}>
                   <div className={styles.channel}>To [Fireteam]: </div>
-                  <div>{row}</div>
+                  <div className={styles.text}>{row}</div>
                   <button
                     className={styles.clipboardButton}
                     onClick={ev => {
